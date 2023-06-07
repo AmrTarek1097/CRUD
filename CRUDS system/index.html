@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 mx-auto my-5">
+        <label for="name">Product name</label>
+        <input type="text" id="pname" class="form-control my-3">
+
+        <label for="price">Product Price</label>
+        <input type="text" id="price" class="form-control my-3">
+
+        <label for="device">Product device</label>
+        <input type="text" id="device" class="form-control my-3">
+
+        <label for="disc">Discription</label>
+        <textarea class="form-control mb-3 my-3" name="" id="disc" cols="" rows=""></textarea>
+
+        <button onclick='addproduct()' id="addbtn" class="btn btn-info">Add Product</button>
+        <button onclick='updateConfirmation()' id="updatebtn" class="btn btn-warning d-none">Update</button>
+        <button onclick='reset()' id="updatebtn" class="btn btn-danger">Reset</button>
+        
+        <div class="text-center my-4">
+          <label for="search">Search</label>
+          <input oninput="searchProduct(this.value)" type="text" class="form-control my-3 w-75 mx-auto" id="search">
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  
+  <table class="table table-striped w-75 m-auto text-center">
+    <thead >
+      <th>Index</th>
+      <th>Product Name</th>
+      <th>Price</th>
+      <th>Categor</th>
+      <th>Description</th>
+      <th>Update</th>
+      <th>Delete</th>
+    </thead>
+
+    <tbody id="mytable">
+
+    </tbody>
+  </table>
+
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
