@@ -2,7 +2,7 @@
 
 ### Simple CRUD system for adding, previewing, updating, and deleting products using local storage as a database.
 
-
+### Live version: [CRUD System](https://amrtarek1097.github.io/CRUD/)
 
 
 
